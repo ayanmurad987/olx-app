@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat | olx-ayan</title>
+    <link rel="stylesheet" href="../style/inbox.css">
+    <link rel="icon" href="../img/olx-logo.png" type="image/gif" sizes="16x16">
+</head>
+<body onload="getingmsg()">
+    
+                 <div id="services_inbox">
+                    <div class="inbox_main">
+                        <div class="msg_nav"></div>
+                        <div class="msg_body"></div>
+                        <div class="msg_footer">
+            
+                            <div class="senddiv">
+                                    <input type="text" id="sendInpu" placeholder="Type massage">
+                                    <input type="button" id="sendbtn" value="Send" onclick="sendmsg()">
+                            </div>
+            
+                            
+                        </div>
+            
+            
+                    </div>
+                </div>
+
+                
+                <div class="showChatmsg" id="showChatmsg">
+                    <div class="noOfmsg" id="">
+                    
+                            <p class="chatmsg1">olljjhvfvghfghvgj ijkljlkj kljljl oijlj 000 </p>
+
+                    </div>
+
+                    <div class="noOfmsg">
+                    
+                            <p class="chatmsg1">olljjhvfvghfghvgj ijkljlkj kljljl oijlj 000 </p>
+
+                    </div>
+
+                    <div class="noOfmsg">
+                    
+                            <p class="chatmsg1">olljjhvfvghfghvgj ijkljlkj kljljl oijlj 000 </p>
+
+                    </div>
+                    <div class="noOfmsg1">
+                    
+                            <p class="chatmsg2">olljjhvfvghfghvgj ijkljlkj kljljl oijlj 000 </p>
+
+                    </div>
+                    <div class="noOfmsg1">
+                      
+                                <p class="chatmsg2">olljjhvfvghfghvgj ijkljlkj kljljl oijlj 000 </p>
+                        </div>
+
+                    </div>
+                    
+                    
+                    
+                </div>
+
+
+                
+
+                <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDFJLKgNTwbXsrZPaquuvikqZyCHKU518A",
+    authDomain: "olx-ayan-pk.firebaseapp.com",
+    databaseURL: "https://olx-ayan-pk.firebaseio.com",
+    projectId: "olx-ayan-pk",
+    storageBucket: "olx-ayan-pk.appspot.com",
+    messagingSenderId: "152708313324"
+  };
+  firebase.initializeApp(config);
+</script>
+                
+
+                <script src="app.js"></script>
+    
+</body>
+</html>

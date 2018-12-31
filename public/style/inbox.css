@@ -1,0 +1,121 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#services_inbox{
+    top: 0;
+    left: 0;
+    /* background-color: rgb(200, 241, 123); */
+    float: left;
+    z-index: 2;
+    position: fixed;
+    
+}
+
+.inbox_main{
+
+    
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    
+}
+.msg_nav{
+    background: #FF8100;
+    flex: 2;
+    
+}
+
+.msg_body{
+    /* background: rgb(255, 72, 0); */
+    flex: 8
+}
+
+.msg_footer{
+    background: #5C307F;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.senddiv{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+#sendInpu{
+    font-size: 130%;
+    padding: 10px;
+    width: 55%;
+    /* padding-left: 20px; */
+    border: transparent;
+    
+    background-color: transparent;
+    
+    transition: .7s
+    
+}
+
+#sendInpu:hover{
+    border-bottom: 2px solid;
+}
+
+#sendInpu:focus{
+    outline: none;
+}
+
+#sendbtn{
+    font-size: 130%;
+   padding: 10px;
+   float:right;
+}
+
+
+.showChatmsg{
+
+    padding: 140px 0px;
+
+}
+
+
+
+.chatmsg1 {
+    padding: 20px;
+    background-color: green;
+    max-width: 60%;
+    font-size: 120%;
+    border-radius: 20px 20px 20px 0px;
+    display: inline;
+     
+}
+.chatmsg2 {
+    padding: 20px;
+    background-color:#BEC100;
+    max-width: 60%;
+    font-size: 120%;
+    border-radius: 20px 20px 0px 20px;
+    display: inline;
+    
+
+    
+}
+.noOfmsg{
+    /* margin: 10px; */
+    padding: 0px;
+    /* background-color: yellow; */
+    display: flex;
+}
+.noOfmsg1{
+    /* margin: 10px; */
+    padding: 0px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+

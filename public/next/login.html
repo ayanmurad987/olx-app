@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LogIn/SignUp | olx-ayan</title>
+    <link rel="stylesheet" type="text/css" href="https://olxpkstatic-a.akamaihd.net/d8b0031-952/packed/sw3816d32dda368f53b8ae3e7840450135.css">
+    <!-- <link rel="stylesheet" href="../style/add.css"> -->
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="icon" href="../img/olx-logo.png" type="image/gif" sizes="16x16">
+
+    
+</head>
+<body>
+            <div id="logo-div">
+                <div class="logo-img">
+                        <a href="../index.html"><img src="../img/olx-logo.png" width="80" height="80" id="logo">
+                        </a><h1 class="logo-h1"><b> Pakistan's </b>Largest Market<b>place </b></h1>
+                    
+                    
+                    <div class="acnt-div">
+                            <a href="addshow.html"><input type="image" src="../img/fvt.png" width="30" height="35" class="qr" onclick="stfvrt()"></a>
+                        <a href="#" id="acnt-link"><h1 class="acnt-h1"> <img src="../img/acnt.png" width="30" height="30"> <b>My Account</b> </h1></a>
+                        <h1 class="ad"><a href="add.html">Submit an Ad</a> </h1>
+                                </div>
+
+                                <div class="dropdown">
+                                    <img src="../img/option.png" height="30px" class="dropbtn">
+                                    <!-- <button class="dropbtn">Dropdown</button> -->
+                                    <div class="dropdown-content">
+                                      <a href="add.html">Ads Submit</a>
+                                      <a href="login.html">login/SignUp</a>
+                                      <a href="addshow.html" onclick="stfvrt()">Favirate</a>
+                                    </div>
+                                </div>
+                </div>
+                
+
+              
+            </div>
+ 
+            
+
+<div class="loginset"></div>
+            <form class="addf1"   >
+                    <h1>LogIn</h1>
+                
+                <div class="addform">
+                    <br>
+                        
+    
+                        <div class="loginInput">
+                                <label for="Add title"> Email..</label>
+                                <br>
+                                <input type="email" placeholder="Enter your email" id="email">
+                                <br>
+                            <label for="Add title"> Password..</label>
+                            <br>
+                        <input type="password" placeholder="Enter your password.." id="pwd">
+                        </div>
+                        
+                        <br>
+                        
+                                <input type="button" value="submit" onclick="signIn()") id="button1">
+                                <br>
+    
+    
+
+                </div>    
+                </form>
+
+                <br>
+            <h1>or</h1>
+            <br>
+
+
+
+                <form action="" class="addf2"   >
+                        <h1>SignUp</h1>
+                  
+                    <div class="addform">
+                            <div class="loginInput">
+                                <br>
+                            <label for="Add title"> Email..</label>
+                            <br>
+                            <input type="email" placeholder="Enter your email" id="email1">
+                            <br>
+        
+                            
+                            <label for="Add title"> Password..</label>
+                            <br>
+                            <input type="password" placeholder="Enter your password.." id="pwd1">
+                            <br>
+                           <br>
+                        </div>
+                                    <input type="button" value="submit" onclick="signUp()") id="button">
+                                    <br>
+                    </div>    
+                    
+                    </form>
+
+
+                    
+
+
+                    <footer class="footer-">
+                        <div class="footer-main">
+                
+                            <!-- div class="sub-div-4">asda</div>< -->
+                            <div class="sub-div-1"><img src="../img/olx-logo.png" width="100px"></div>
+                            <div class="sub-div-2">
+                                <span>Locatios Maps</span>
+                                <br>
+                                <span>Popular searching</span>
+                                <br>
+                                <span>Achive</span>
+                                <br>
+                                <span>Site Map</span>
+                            </div>
+                            <div class="sub-div-3">
+                                    <span>Tream of use</span>
+                                    <br>
+                                    <span>Help & contact</span>
+                                    <span></span>
+                                    <br>
+                
+                            </div>
+                            <div class="sub-div-4">
+                                
+                                    <span>Who we are</span>
+                                    <br>
+                                    <span>Joine olx</span>
+                                    <br>
+                                    <span>Happy OLXers</span>
+                                    <span></span>
+                            </div>
+                            <div class="sub-div-5"></div>
+                        </footer>
+            
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDFJLKgNTwbXsrZPaquuvikqZyCHKU518A",
+    authDomain: "olx-ayan-pk.firebaseapp.com",
+    databaseURL: "https://olx-ayan-pk.firebaseio.com",
+    projectId: "olx-ayan-pk",
+    storageBucket: "olx-ayan-pk.appspot.com",
+    messagingSenderId: "152708313324"
+  };
+  firebase.initializeApp(config);
+  
+</script>
+<script src="app.js"></script>
+
+</body>
+</html>

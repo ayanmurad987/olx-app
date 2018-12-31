@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | olx-ayan</title>
+    <link rel="stylesheet" type="text/css" href="style/menu.css">
+    <link rel="icon" href="img/olx-logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/login.css">
+
+    <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+</head>
+<body>
+            <div id="logo-div">
+                <div class="logo-img">
+                    <a href="index.html"><img src="img/olx-logo.png" width="80" height="80" id="logo">
+                        </a><h1 class="logo-h1"><b> Pakistan's </b>Largest Market<b>place </b></h1>
+                    
+                </div>
+                   
+                    <div class="acnt-div"><a href="next/addshow.html"><input type="image" src="img/fvt.png" width="30" height="35" class="qr" onclick="stfvrt()"></a>
+                        <a href='next/login.html' id='acnt-link'><h1 class='acnt-h1'> <img src='img/acnt.png' width='30' height='30'> <b>My Account</b> </h1></a><h1 class='ad>Submit an Ad' </h1>
+                                <h1 class="ad"><a href="next/add.html">Submit an Ad</a> </h1>
+                                </div>
+
+                                <div class="dropdown">
+                                        <img src="img/option.png" height="30px" class="dropbtn">
+                                        <!-- <button class="dropbtn">Dropdown</button> -->
+                                        <div class="dropdown-content">
+                                          <a href="next/add.html">Ads Submit</a>
+                                          <a href="next/login.html">login/SignUp</a>
+                                          <a href="next/addshow.html" onclick="stfvrt()">Favirate</a>
+                                        </div>
+                                </div>
+                
+
+              
+            </div>
+
+
+            <form class="searchmain" id="searchmain" method="POST" action="#">
+                <fieldset>
+                    
+                        <a href="#" class="icon cleartext3 abs clear-input-button hidden">X</a>
+                        <div class="distanceseparator abs"></div>
+                        
+                        <div class="proposals hidden" id="proposalContainer">
+                            <div class="lastbox">
+                                <p>Recently Selected:</p>
+                                
+                            </div>
+                            <div class="abs categorySelectContainer">
+                                <ul >
+                                </ul>
+                            </div>
+                        </div>
+                        <input class="autosuggest-geo-input" type="hidden" name="search[city_id]" value="">
+                        <input class="autosuggest-geo-input-region" type="hidden" name="search[region_id]" value="">
+                        <input class="autosuggest-geo-district-input" type="hidden" name="search[district_id]" value="0">
+                                    
+                        <div class="autosuggest-geo-div suggestmain">
+                            <!-- via ajax -->
+                        <ul id="autosuggest-geo-ul" class="suggestgeo hidden bgfff normal br-3 abs"></ul></div>
+                        <div id="geo-suggestions" class="chooselocation br3 hidden">
+                            <div class="icon target abs"></div>
+                            <a id="geo-suggestions-close" href="#" class="close icon abs">X</a>
+                            <p>Select Location:</p>
+                            <div id="geo-suggestions-options" class="items"></div>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="suggest bottom abs zi2 br3 error hidden" id="cityFieldError">
+                    <span class="target abs icon">&nbsp;</span>
+                    <p>Select a Location or Zip Code</p>
+                </div>
+                </div></div>
+            <div class="fblock fquery fleft clr rel">
+                <div class="rel clr lheight16">
+                    <div class="clearbox rel fleft input-container">
+                        <!-- <input autocomplete="off" type="text" class="fleft ca2 light large queryfield defaultval with-x-clear-button autosuggest-input {suggesturl:'https://www.olx.com.pk/ajax/suggest/get/'}" id="headerSearch" value="" name="q"> -->
+                        <input type="text" id="mysearching">
+                        <a class="icon cleartext8 abs clear-input-button hidden" href="#">X</a>
+                    </div>
+                    <label class="icon searchflat abs" for="headerSearch">&nbsp;</label>
+                    
+                    <div id="autosuggest-div"></div>
+                </div>
+            </div>
+            
+                    <span class="button big4 fright br3">
+                        <span class="icon inlblk vtop b_searchmain2 marginleft14 margintop9">&nbsp;</span>
+                        <input id="submit-searchmain" type="button" onclick="searching()" value="Search" class="cfff x-large margintop-1" id="">
+                    </span>
+                </fieldset>
+            </form>
+
+
+
+
+            <hr>
+ 
+            <div class="cat">
+                
+                <ul class="olxpk__categories--menu">
+                    <li><a href="next/addshow.html" onclick="propertySell()"><i class="icon-property-for-sale"></i> Property for Sale</a></li>
+                    <li><a href="next/addshow.html" onclick="propertyRent()"><i class="icon-property-for-rent"></i> Property for Rent</a></li>
+                    <li><a href="next/addshow.html" onclick="Vihicles()"><i class="icon-vehicles"></i> Vehicles</a></li>
+                    <li><a href="next/addshow.html" onclick="Bikes()"><i class="icon-bikes"></i> Bikes</a></li>
+                    <li><a href="next/addshow.html" onclick="Electronics()"><i class="icon-electronics-home-appliances"></i> Electronics &amp; Home Appliances</a></li>
+                    <li><a href="next/addshow.html" onclick="Mobiles()"><i class="icon-mobiles-tablets"></i> Mobiles</a></li>
+                    <li><a href="next/addshow.html" onclick="Jobs()"><i class="icon-jobs"></i> Jobs</a></li>
+                    <li><a href="next/addshow.html" onclick="Services()"><i class="icon-services"></i> Services</a></li>
+                    <li><a href="next/addshow.html" onclick="Industrial()"><i class="icon-business-industrial-agriculture"></i> Business Industrial &amp; Agriculture</a></li>
+                    <li><a href="next/addshow.html" onclick="farniture()"><i class="icon-furniture-home-decor"></i> Furniture &amp; Home Decor</a></li>
+                    <li><a href="next/addshow.html" onclick="Animals()"><i class="icon-animals"></i> Animals</a></li>
+                    <li><a href="next/addshow.html" onclick="Books()"><i class="icon-books-sports-hobbies"></i> Books, Sports &amp; Hobbies</a></li>
+                    <li><a href="next/addshow.html" onclick="fashion()"><i class="icon-fashion-beauty"></i> Fashion &amp; Beauty</a></li>
+
+                    <li><a href="next/addshow.html" onclick="Kids()"><i class="icon-kids-baby-products"></i> Kids</a></li></ul>
+                <div class="body">
+
+
+
+                   
+                </div>
+
+            </div>
+
+        </table>
+
+        <footer class="footer-">
+                <div class="footer-main">
+        
+                    <!-- div class="sub-div-4">asda</div>< -->
+                    <div class="sub-div-1"><img src="img/olx-logo.png" width="100px"></div>
+                    <div class="sub-div-2">
+                        <span>Locatios Maps</span>
+                        <br>
+                        <span>Popular searching</span>
+                        <br>
+                        <span>Achive</span>
+                        <br>
+                        <span>Site Map</span>
+                    </div>
+                    <div class="sub-div-3">
+                            <span>Tream of use</span>
+                            <br>
+                            <span>Help & contact</span>
+                            <span></span>
+                            <br>
+        
+                    </div>
+                    <div class="sub-div-4">
+                        
+                            <span>Who we are</span>
+                            <br>
+                            <span>Joine olx</span>
+                            <br>
+                            <span>Happy OLXers</span>
+                            <span></span>
+                    </div>
+                    <div class="sub-div-5"></div>
+            </footer>
+
+            <script>
+                
+            </script>
+            <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyDFJLKgNTwbXsrZPaquuvikqZyCHKU518A",
+                authDomain: "olx-ayan-pk.firebaseapp.com",
+                databaseURL: "https://olx-ayan-pk.firebaseio.com",
+                projectId: "olx-ayan-pk",
+                storageBucket: "olx-ayan-pk.appspot.com",
+                messagingSenderId: "152708313324"
+              };
+              firebase.initializeApp(config);
+            </script>
+            <script src="next/app.js"></script>
+
+</body>
+</html>

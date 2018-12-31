@@ -1,0 +1,133 @@
+form{
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+
+.addform input{
+    padding: 5px;
+}
+
+.addform{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-width: 310px; */
+    
+    -moz-box-shadow: 0 0 10px #4295f4;
+    -webkit-box-shadow: 0 0 10px #4295f4;
+    box-shadow: 0 0 10px #4295f4;
+}
+
+.addf1,.addf2{
+    
+    /* min-width: 310px; */
+    background-color: white;
+    border-radius: 30px 30px 5px 5px;
+    border:transparent;
+    transition: .5s;
+    -moz-box-shadow: 0 0 3px #777777;
+    -webkit-box-shadow: 0 0 3px #777777;
+    box-shadow: 0 0 3px #777777;
+    
+}
+.addf1 label,.addf2 label{
+    font-size: 1.2em;
+}
+
+.addf1:hover ,.addf2:hover{
+    -moz-box-shadow: 0 0 30px #777777;
+    -webkit-box-shadow: 0 0 30px #777777;
+    box-shadow: 0 0 30px #777777;
+    }
+
+
+.addf2{
+    /* min-width: 310px; */
+    background-color: white;
+}
+
+
+.addf1>h1{
+    background-color: #BEC100;
+    border-top-left-radius: 80px 50px;
+    border-top-right-radius: 80px 50px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px;
+    font-size:2em;
+    color: white;
+}
+.addf2>h1{
+    background-color: #5C307F;
+    border-top-left-radius: 80px 50px;
+    border-top-right-radius: 80px 50px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px;
+    font-size:2em;
+    color: white;
+}
+.loginInput{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+
+
+}
+
+.addf1 , .addf2{
+    margin: 20px
+}
+
+
+
+.loginInput>input{
+    width: 100%;
+}
+
+.loginInput>input:hover{
+    -moz-box-shadow: 0 0 10px #4295f4;
+    -webkit-box-shadow: 0 0 10px #4295f4;
+    box-shadow: 0 0 10px #4295f4;
+}
+
+#pwd,#pwd1,#email,#email1{
+    padding: 10px 15px ;
+    background-color: rgba(197, 197, 197, 0.699);
+    border: transparent;
+    border-radius: 5px 10px;
+    width: 100%;
+}
+
+#button,#button1,#addkabutton{
+    padding: 6px 20px;
+    font-size:1.5em;
+    background-color: #FF8100;
+    border: transparent;
+}
+.loginset{
+    padding-top:130px
+}
+
+/* @media(max-width:744px){
+    #logo-div{
+  
+      flex-direction: column;
+    }
+  
+    
+  } */
+  
+  @media(max-width:490px){
+    .logo-h1 b{
+      display: none;
+      
+  
+    }
+  
+  }
+
+
+
